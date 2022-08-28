@@ -1,0 +1,74 @@
+window:
+  padding:
+    x: 0
+    y: 0
+ # Spread additional padding evenly around the terminal content.
+  dynamic_padding: true
+
+  class:
+    instance: Alacritty
+    general: Alacritty
+  opacity: 0.9
+scrolling:
+  history: 10000
+  multiplier: 3
+
+
+font:
+  normal:
+    family: Hack Nerd Font 
+    style:  Medium
+  bold:
+    family: Hack Nerd Font
+    style:  Bold
+  italic:
+    family: Hack Nerd Font
+    style:  MediumItalic
+  bold_italic:
+    family: Hack Nerd Font
+    style: BoldItalic
+  size: 10.0
+draw_bold_text_with_bright_colors: true
+
+
+    
+selection:
+  save_to_clipboard: false
+
+shell:
+  program: /usr/bin/zsh
+
+key_bindings:
+  - { key: Return, mods: Super|Shift, action: SpawnNewInstance }
+
+    # Specifying a `duration` of `0` will disable the visual bell.
+bell:
+  animation: EaseOutExpo
+  duration: 300
+  color: '0xffffff'
+window.opacity: 0.99
+selection:
+  # This string contains all characters that are used as separators for
+  # "semantic words" in Alacritty.
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+  # When set to `true`, selected text will be copied to the primary clipboard.
+  save_to_clipboard: true
+# Allow terminal applications to change Alacritty’s window title.
+window.dynamic_title: true
+cursor:
+  style: Block
+  unfocused_hollow: true
+# Live config reload (changes require restart)
+live_config_reload: true
+# Tell Alacritty that we’re using fish here
+#shell:
+#  program: /usr/local/bin/fish
+#  args:
+#    - --login
+# Enable clickable URLs
+mouse:
+  hints:
+    launcher:
+      program: open
+    modifiers: Command
+
