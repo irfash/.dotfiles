@@ -1,0 +1,3 @@
+#Rofi 
+super + F12
+    rofi -show drun

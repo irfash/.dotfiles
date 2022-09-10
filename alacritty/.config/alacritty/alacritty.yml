@@ -8,7 +8,7 @@ window:
   class:
     instance: Alacritty
     general: Alacritty
-  opacity: 0.9
+  opacity: 0.8
 scrolling:
   history: 10000
   multiplier: 3
@@ -46,7 +46,7 @@ bell:
   animation: EaseOutExpo
   duration: 300
   color: '0xffffff'
-window.opacity: 0.99
+window.opacity: 0.5
 selection:
   # This string contains all characters that are used as separators for
   # "semantic words" in Alacritty.
