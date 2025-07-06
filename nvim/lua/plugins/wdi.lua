@@ -1,0 +1,191 @@
+return {
+	-- "nvim-tree/nvim-web-devicons",
+	-- event = "VeryLazy",
+	-- config = function()
+	-- 	require("nvim-web-devicons").setup({
+	-- 		override = {
+	-- 			-- JavaScript
+	-- 			js = {
+	-- 				icon = "",
+	-- 				color = "#f7df1e", -- JS yellow
+	-- 				cterm_color = "185",
+	-- 				name = "Js",
+	-- 			},
+	-- 			-- TypeScript
+	-- 			ts = {
+	-- 				icon = "",
+	-- 				color = "#3178c6", -- TS blue
+	-- 				cterm_color = "74",
+	-- 				name = "Ts",
+	-- 			},
+	-- 			-- React JSX
+	-- 			jsx = {
+	-- 				icon = "",
+	-- 				color = "#61dafb", -- React blue
+	-- 				cterm_color = "39",
+	-- 				name = "Jsx",
+	-- 			},
+	-- 			-- React TSX
+	-- 			tsx = {
+	-- 				icon = "",
+	-- 				color = "#3178c6", -- React TSX blue
+	-- 				cterm_color = "74",
+	-- 				name = "Tsx",
+	-- 			},
+	-- 			-- HTML
+	-- 			html = {
+	-- 				icon = "",
+	-- 				color = "#e34c26", -- HTML orange-red
+	-- 				cterm_color = "166",
+	-- 				name = "Html",
+	-- 			},
+	-- 			-- CSS
+	-- 			css = {
+	-- 				icon = "",
+	-- 				color = "#563d7c", -- CSS purple
+	-- 				cterm_color = "60",
+	-- 				name = "Css",
+	-- 			},
+	-- 			-- Python
+	-- 			py = {
+	-- 				icon = "",
+	-- 				color = "#3572A5", -- Python blue
+	-- 				cterm_color = "67",
+	-- 				name = "Py",
+	-- 			},
+	-- 			-- JSON
+	-- 			json = {
+	-- 				icon = "",
+	-- 				color = "#cbcb41", -- JSON yellow
+	-- 				cterm_color = "185",
+	-- 				name = "Json",
+	-- 			},
+	-- 			-- Markdown
+	-- 			md = {
+	-- 				icon = "",
+	-- 				color = "#519aba", -- Markdown blue
+	-- 				cterm_color = "74",
+	-- 				name = "Md",
+	-- 			},
+	-- 			-- Lua
+	-- 			lua = {
+	-- 				icon = "",
+	-- 				color = "#000080", -- Lua dark blue
+	-- 				cterm_color = "19",
+	-- 				name = "Lua",
+	-- 			},
+	-- 			-- C
+	-- 			c = {
+	-- 				icon = "",
+	-- 				color = "#555555", -- C grey
+	-- 				cterm_color = "59",
+	-- 				name = "C",
+	-- 			},
+	-- 			-- C++
+	-- 			cpp = {
+	-- 				icon = "",
+	-- 				color = "#f34b7d", -- C++ pink
+	-- 				cterm_color = "204",
+	-- 				name = "Cpp",
+	-- 			},
+	-- 			-- Go
+	-- 			go = {
+	-- 				icon = "",
+	-- 				color = "#00ADD8", -- Go blue
+	-- 				cterm_color = "81",
+	-- 				name = "Go",
+	-- 			},
+	-- 			-- Java
+	-- 			java = {
+	-- 				icon = "",
+	-- 				color = "#b07219", -- Java brown
+	-- 				cterm_color = "166",
+	-- 				name = "Java",
+	-- 			},
+	-- 			-- Ruby
+	-- 			rb = {
+	-- 				icon = "",
+	-- 				color = "#701516", -- Ruby dark red
+	-- 				cterm_color = "52",
+	-- 				name = "Rb",
+	-- 			},
+	-- 			-- PHP
+	-- 			php = {
+	-- 				icon = "",
+	-- 				color = "#4F5D95", -- PHP blue-grey
+	-- 				cterm_color = "67",
+	-- 				name = "Php",
+	-- 			},
+	-- 			-- YAML
+	-- 			yml = {
+	-- 				icon = "",
+	-- 				color = "#cbcb41", -- YAML yellow
+	-- 				cterm_color = "185",
+	-- 				name = "Yml",
+	-- 			},
+	-- 			-- Docker
+	-- 			dockerfile = {
+	-- 				icon = "",
+	-- 				color = "#384d54", -- Docker teal
+	-- 				cterm_color = "66",
+	-- 				name = "Dockerfile",
+	-- 			},
+	-- 			-- Git
+	-- 			gitignore = {
+	-- 				icon = "",
+	-- 				color = "#f34f29", -- Git red-orange
+	-- 				cterm_color = "203",
+	-- 				name = "Gitignore",
+	-- 			},
+	-- 			-- Vim
+	-- 			vim = {
+	-- 				icon = "",
+	-- 				color = "#019833", -- Vim green
+	-- 				cterm_color = "29",
+	-- 				name = "Vim",
+	-- 			},
+	-- 			-- Shell scripts
+	-- 			sh = {
+	-- 				icon = "",
+	-- 				color = "#4d5a5e", -- Shell grey
+	-- 				cterm_color = "59",
+	-- 				name = "Sh",
+	-- 			},
+	-- 			-- Config files (e.g., .env)
+	-- 			env = {
+	-- 				icon = "",
+	-- 				color = "#e5c07b", -- Config yellow
+	-- 				cterm_color = "222",
+	-- 				name = "Env",
+	-- 			},
+	-- 			-- Test files
+	-- 			test_js = {
+	-- 				icon = "ﭧ",
+	-- 				color = "#e6d1f5", -- Light purple for tests
+	-- 				cterm_color = "147",
+	-- 				name = "TestJs",
+	-- 			},
+	-- 			test_ts = {
+	-- 				icon = "ﭧ",
+	-- 				color = "#e6d1f5", -- Light purple for tests
+	-- 				cterm_color = "147",
+	-- 				name = "TestTs",
+	-- 			},
+	-- 			spec_js = {
+	-- 				icon = "ﭧ",
+	-- 				color = "#e6d1f5",
+	-- 				cterm_color = "147",
+	-- 				name = "SpecJs",
+	-- 			},
+	-- 			spec_ts = {
+	-- 				icon = "ﭧ",
+	-- 				color = "#e6d1f5",
+	-- 				cterm_color = "147",
+	-- 				name = "SpecTs",
+	-- 			},
+	-- 		},
+	-- 		color_icons = true, -- Enable icon colors
+	-- 		default = true, -- Fallback to default if no override
+	-- 	})
+	-- end,
+}

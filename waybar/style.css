@@ -1,0 +1,103 @@
+@import "./rose-pine.css";
+
+* {
+  /* https://docs.gtk.org/gtk3/css-overview.html#colors */
+  color: @text;
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 10pt;
+  font-weight: bold;
+  border-radius: 8px;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+
+@keyframes blink_red {
+  to {
+    background-color: @love;
+    color: @base;
+  }
+}
+
+.warning,
+.critical,
+.urgent {
+  animation-name: blink_red;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+/* window{ */
+  /* background-color: rgba(30, 30, 30, 0.0);  */
+  /* background-color:@hlightHigh; */
+/* } */
+window#waybar {
+  background-color: transparent;
+}
+
+
+#workspaces {
+  /* padding-left: 0px; */
+}
+
+#workspaces button {
+  border-radius: 8px; /* Curve on hover */
+}
+
+#workspaces button.active {
+  background-color: @highlightLow;
+  color: @base;
+}
+#workspaces button:hover {
+  background-color: @gold;
+  color: @base;
+  border-radius: 26px; /* Curve on hover */
+}
+#workspaces button.urgent {
+  color: @base;
+}
+window > box {
+  /* background-color: shade(@base, 0.9); */
+  margin: 5px;
+  border: 0.2px solid alpha(@foam, 0.5);
+  border-radius: 18px;
+}
+		/* Custome */
+#custom-launcher {
+  font-size: 11px;
+  color: @foam;
+   padding: 0 8px;
+}
+#mode,
+#clock,
+#mpd,
+#custom-wall,
+#pulseaudio,
+#network,
+#battery,
+#custom-powermenu {
+  padding-left: 5px;
+  padding-right: 10px;
+}
+
+#clock {
+  min-width: 50px;
+}
+#battery.charging,
+#battery.full,
+#battery.plugged {
+  color: @pine;
+}
+
+#battery.critical:not(.charging) {
+  color: @love;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+

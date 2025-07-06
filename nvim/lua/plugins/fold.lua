@@ -1,0 +1,28 @@
+return {
+	-- {
+	-- 	"kevinhwang91/nvim-ufo",
+	-- 	event = "VeryLazy",
+	-- 	dependencies = {
+	-- 		"kevinhwang91/promise-async",
+	-- 	},
+	-- 	init = function()
+	-- 		vim.o.foldcolumn = "1"
+	-- 		-- vim.o.foldlevel = 99
+	-- 		-- vim.o.foldlevelstart = 99
+	-- 		vim.o.foldenable = true
+	-- 		vim.o.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
+	-- 	end,
+	-- 	opts = function()
+	-- 		return {
+	-- 			provider_selector = function()
+	-- 				return { "treesitter", "indent" }
+	-- 			end,
+	-- 		}
+	-- 	end,
+	-- },
+	-- {
+	-- 	"chrisgrieser/nvim-origami",
+	-- 	event = { "VeryLazy" },
+	-- 	opts = { auto_save = true, auto_restore = true },
+	-- },
+}

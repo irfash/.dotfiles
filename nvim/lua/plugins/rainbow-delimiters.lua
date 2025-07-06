@@ -1,0 +1,44 @@
+return {
+	-- "HiPhish/rainbow-delimiters.nvim",
+	-- event = { "BufReadPre", "BufNewFile" },
+	-- config = function()
+	-- 	-- Define the colors manually (One Dark Pro palette)
+	-- 	local palette = {
+	-- 		blue = "#61afef",
+	-- 		cyan = "#56b6c2",
+	-- 		green = "#00FF63",
+	-- 		yellow = "#e5c07b",
+	-- 		purple = "#c678dd",
+	-- 		gray = "#5c6370",
+	-- 	}
+	--
+	-- 	-- Define highlights using the manual palette
+	-- 	vim.api.nvim_set_hl(0, "RainbowDelimiterBlue", { fg = palette.blue })
+	-- 	vim.api.nvim_set_hl(0, "RainbowDelimiterCyan", { fg = palette.cyan })
+	-- 	vim.api.nvim_set_hl(0, "RainbowDelimiterGreen", { fg = palette.green })
+	-- 	vim.api.nvim_set_hl(0, "RainbowDelimiterYellow", { fg = palette.yellow })
+	-- 	vim.api.nvim_set_hl(0, "RainbowDelimiterViolet", { fg = palette.purple })
+	-- 	vim.api.nvim_set_hl(0, "RainbowDelimiterGray", { fg = palette.gray })
+	--
+	-- 	-- Plugin configuration
+	-- 	local rainbow_delimiters = require("rainbow-delimiters")
+	-- 	vim.g.rainbow_delimiters = {
+	-- 		strategy = {
+	-- 			[""] = rainbow_delimiters.strategy["global"],
+	-- 			commonlisp = rainbow_delimiters.strategy["local"],
+	-- 		},
+	-- 		query = {
+	-- 			[""] = "rainbow-delimiters",
+	-- 			latex = "rainbow-blocks",
+	-- 		},
+	-- 		highlight = {
+	-- 			"RainbowDelimiterBlue",
+	-- 			"RainbowDelimiterCyan",
+	-- 			"RainbowDelimiterGreen",
+	-- 			"RainbowDelimiterYellow",
+	-- 			"RainbowDelimiterViolet",
+	-- 			"RainbowDelimiterGray",
+	-- 		},
+	-- 	}
+	-- end,
+}

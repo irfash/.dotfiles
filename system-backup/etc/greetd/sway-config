@@ -1,0 +1,4 @@
+
+output * bg #313244 solid_color
+exec regreet
+

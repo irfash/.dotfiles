@@ -1,0 +1,45 @@
+#window {
+  background-color: rgba(30, 30, 30, 0.6);
+  border-radius: 14px;
+  /* padding: 10px; */
+}
+
+#entry {
+    /* Set the default border/box-shadow for the entry here */
+    border: 1px solid #444; /* Example: a subtle default border */
+    box-shadow: none; /* Crucially, remove any box-shadow inherited from parent focus */
+    outline: none; /* Remove default GTK outline if it appears */
+
+    /* Keep your existing styling for the entry field here (background, color, padding, etc.) */
+    background-color: #2c2c2c;
+    border-radius: 9px;
+    padding: 5px;
+    color: #e0e0e0;
+    font-family: "Inter", "Fira Sans", sans-serif;
+    font-size: 16px;
+}
+
+#main {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border-radius:9px;
+}
+/* Individual plugin/match items */
+#plugin, #match {
+    padding:2px 2px;
+    background-color:transparent;
+    color: #c0c0c0;
+    font-family: "Inter", "Fira Sans", sans-serif;
+    font-size: 14px;
+}
+#plugin:selected,
+#match:selected {
+    border-radius:8px;
+    background-color: #4a4a5a; /* Muted accent blue/purple for SELECTED item background */
+    color: #ffffff; /* White text for selected item */
+    /* Ensure no unwanted borders or outlines on selected state too */
+    border: none;
+    outline: none;
+}
+
+

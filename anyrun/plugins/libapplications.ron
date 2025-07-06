@@ -1,0 +1,4 @@
+Config(
+  desktop_actions: false,
+  terminal: "kitty",
+)

@@ -1,0 +1,24 @@
+@import "./rose-pine.css";
+
+* {
+  /* https://docs.gtk.org/gtk3/css-overview.html#colors */
+  color: @text;
+  font-family: "JetBrainsMono Nerd Font";
+  border-radius: 24px;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+window#waybar {
+  background-color: transparent;
+ /* border: 2px solid alpha(@highlightHigh, 0.3);*/
+}
+#workspaces button {
+  font-size:2px;
+  background-color: alpha(@highlightHigh, 0.1);
+  color: @base;
+}
+#workspaces button.active {
+  background-color:alpha(@highlightHigh, 0.4);
+  color: @base;
+}
